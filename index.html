@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Deep Thought</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="logo-box">
+          <img src="./assets/logo.svg" alt="Deep Thought Logo" />
+        </div>
+        <div class="link-box">
+          <i class="fa-solid fa-house"></i>
+          <i class="fa-solid fa-binoculars"></i>
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <i class="fa-solid fa-bell"></i>
+          <div onclick="showLink()" class="user-icon-box"></div>
+          <div id="mobile-links">
+            <div>
+              <i class="fa-solid fa-house"></i>
+              <div>Home</div>
+            </div>
+            <div>
+              <i class="fa-solid fa-binoculars"></i>
+              <div>See</div>
+            </div>
+            <div>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <div>Tools</div>
+            </div>
+            <div>
+              <i class="fa-solid fa-ellipsis-vertical mobile-dots"></i>
+              <div>More</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis-vertical dots"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="floating-icons">
+        <i class="fa-solid fa-question"></i>
+        <i class="fa-solid fa-people-group"></i>
+        <i class="fa-regular fa-calendar-days"></i>
+      </div>
+      <div class="assets-container"></div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/2c7db289f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
