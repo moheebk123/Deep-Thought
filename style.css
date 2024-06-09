@@ -248,7 +248,11 @@ body {
 
         &.active {
           max-height: 130px;
-          width: fit-content;
+          height: fit-content;
+
+          @media screen and (max-width: 768px) {
+            max-height: 250px;
+          }
 
           & .description-heading i {
             transform: rotate(-180deg);
@@ -285,7 +289,7 @@ body {
       position: fixed;
       z-index: 3;
       top: 4rem;
-      left: -280px;
+      left: -270px;
       background-color: #fff;
       border-radius: 10px;
       -webkit-border-radius: 10px;
@@ -354,7 +358,7 @@ body {
             -o-transform: scale(1.02);
 
             @media screen and (max-width: 768px) {
-              font-weight: 900;
+              /* font-weight: 900; */
             }
           }
         }
