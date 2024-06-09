@@ -246,17 +246,9 @@ body {
         -ms-transition: 0.3s ease;
         -o-transition: 0.3s ease;
 
-        @media screen and (max-width: 370px) {
-          max-height: 60px;
-        }
-
         &.active {
           max-height: 130px;
           width: fit-content;
-
-          @media screen and (max-width: 370px) {
-            max-height: 200px;
-          }
 
           & .description-heading i {
             transform: rotate(-180deg);
@@ -293,7 +285,7 @@ body {
       position: fixed;
       z-index: 3;
       top: 4rem;
-      left: -270px;
+      left: -280px;
       background-color: #fff;
       border-radius: 10px;
       -webkit-border-radius: 10px;
@@ -360,6 +352,10 @@ body {
             -moz-transform: scale(1.02);
             -ms-transform: scale(1.02);
             -o-transform: scale(1.02);
+
+            @media screen and (max-width: 768px) {
+              font-weight: 900;
+            }
           }
         }
       }
